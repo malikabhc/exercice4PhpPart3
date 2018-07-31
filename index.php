@@ -11,9 +11,15 @@
     <p>
       <?php
         while ($number < 10) {
-          echo $number;
-          $number = $number + $number / 2;
+          echo $number . ' ';
+          $number = $number + $number / 2; // $number += $number /2;
         }
+
+/*Autre possibilité : boucle for
+          for ($number = 1; $number <=10 ; $number += $number / 2) {
+            echo $number . ' ';
+          }
+*/
       ?>
     </p>
   </body>
